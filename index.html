@@ -19,11 +19,13 @@
       rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- endbuild -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
-    <link rel="stylesheet" href="/CSS/styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
   </head>
@@ -506,7 +508,7 @@
 -->
 
     <!-- Setup Jquery for single play/pause button -->
-    <script>
+    <!-- 
       $(function () {
         $(".carousel").carousel({ interval: 2000 });
         $("#carouselButton").click(function () {
@@ -520,13 +522,19 @@
             $("#carouselButton").children("i").addClass("fa-pause");
           }
         });
-      });
-    </script>
+      });-->
+
     <!--JQuery Method that active all tooltips for thepage -->
-    <script>
+    <!-- <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
+      });-->
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
