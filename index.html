@@ -43,8 +43,7 @@
         <div class="col col-md-4 col-xl-2 col-12 mt-4">
           <a
             class="btn btn-lg col-12 btn-info"
-            data-toggle="modal"
-            data-target="#reserveModal"
+            id="reserveButton"
             style="white-space: normal"
             >Reserve Campsite</a
           >
@@ -58,7 +57,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-info text-white">
+          <div class="modal-header">
             <h3 class="modal-title">Reserve a Campsite</h3>
             <button type="button" class="close" data-dismiss="modal">
               &times;
@@ -192,7 +191,7 @@
 
           <!--create a sign in using Modal this is the button -->
           <span class="navbar-text ml-auto">
-            <a role="button" data-toggle="modal" data-target="#loginModal">
+            <a role="button" id="loginButton">
               <i class="fa fa-sign-in"></i> Login</a
             >
           </span>
