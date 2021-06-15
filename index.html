@@ -347,23 +347,13 @@
               <span class="carousel-control-next-icon"></span>
               <span class="sr-only">Next</span>
             </a>
-
-            <!-- In #styles - #carouselButton CarouselPause and Play - Adding  z-index: 100; will ensure that the button remains above the carousel instead of beneath it. 
-            position: absolute; also is needed to lay the buttons on top of the carousel instead of beneath it.  -->
-
             <button class="btn btn-danger btn-sm" id="carouselButton">
               <i class="fa fa-pause"></i>
             </button>
-            <!-- How to create a Play and pause button -->
+            <!-- In #styles - #carouselButton CarouselPause and Play - Adding  z-index: 100; will ensure that the button remains above the carousel instead of beneath it. 
+            position: absolute; also is needed to lay the buttons on top of the carousel instead of beneath it.  -->
 
-            <!-- <div class="btn-group" id="carouselButton">
-              <button class="btn btn-danger btn-sm" id="carouselPause">
-                <i class="fa fa-pause"></i> 
-              </button> 
-              <button class="btn btn-danger btn-sm" id="carouselPlay">
-                <i class="fa fa-play"></i>
-              </button>
-            </div> -->
+            <!-- How to create a Play and pause button -->
           </div>
         </div>
       </div>
@@ -489,7 +479,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/scripts.js"></script>
     <!--  Play and pause Jquery requirement 
 
    <script>
@@ -509,6 +499,7 @@
     <!-- Setup Jquery for single play/pause button -->
     <!-- 
       $(function () {
+
         $(".carousel").carousel({ interval: 2000 });
         $("#carouselButton").click(function () {
           if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -530,10 +521,7 @@
       });-->
 
     <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>
